@@ -22,7 +22,7 @@ jobs:
 
       - name: Copy files
         run: |
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -i private_key.pem " ./ ubuntu@52.60.58.165/:/home/ubuntu/www/
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -i private_key.pem " ./ ubuntu@52.60.58.165:/home/ubuntu/www/
 
       - name: Deploy
         run: |

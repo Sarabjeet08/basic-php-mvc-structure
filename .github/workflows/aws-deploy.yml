@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy
         run: |
-          ssh -o StrictHostKeyChecking=no -i private_key.pem ubuntu@52.60.58.165/ << 'EOF'
+          ssh -o StrictHostKeyChecking=no -i private_key.pem ubuntu@52.60.58.165 << 'EOF'
             cd /home/ubuntu/www 
             composer install --no-dev --optimize-autoloader 
             systemctl restart apache2

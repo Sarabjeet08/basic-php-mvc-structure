@@ -109,4 +109,17 @@ extract($array);
 
 **Example**
 - User --> can see but can`t edit or make changes
-- Admin --> can see and make changes# basic-php-mvc-structure
+- Admin --> can see and make changes
+
+# Apache configuration
+
+```xml
+<!-- OR your specific folder -->
+<Directory "/home/ubuntu/www">
+    Options Indexes FollowSymLinks Includes ExecCGI
+    AllowOverride All
+    Require all granted
+</Directory>
+```
+
+## [AWS Step-By-Step](AWS.md)
